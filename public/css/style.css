@@ -1,0 +1,50 @@
+.wholecontainer{
+    padding: 30px;
+}
+.thumbnail {
+    width: 114%;
+    padding: 20px;
+}
+.Cartitmebody{
+    position: relative;
+    top: 53px;   
+}
+.cardcart{
+    padding: 0px 25px;
+    margin-bottom: 20px;
+}
+.cardforitem{
+    border: none;
+}
+.card-title{
+    padding: 25px 0px 0px 30px; 
+}
+.Qty{
+    /* border: 0.05px solid grey; */
+    padding: 4px 20px;
+    position: absolute;
+    left:43px;
+}
+
+.Increment{
+    position: absolute;
+    left: 100px;
+}
+
+.Decrement{
+    position: absolute;
+    left: 6px;
+}
+Button:focus{
+    border: none;
+    outline:none;
+    outline-offset: 0;
+}
+.subtotal{
+    position: relative;
+    left: 140px;
+}
+.totalam{
+    position: relative;
+    left: 140px;
+}
