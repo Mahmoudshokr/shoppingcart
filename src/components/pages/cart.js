@@ -57,7 +57,7 @@ class Cart extends React.Component{
                         <Card className="cardforitem" key={cartArr._id}>
                             
                             <Row>
-                                <Col  xs={12} sm={2}>
+                                <Col  xs={6} md={2} sm={4}>
                 
                                 <Card.Img className='thumbnail' src={'images/' + cartArr.image}/>
                                 
@@ -67,15 +67,14 @@ class Cart extends React.Component{
                                 <Card.Body>
                                
 
-                                <Col xs={6} sm={12}>
                               <Row className="Cartitmebody">
                              
-                              <Col xs={6} sm={5}>
+                              <Col xs={4} md={4} sm={5}>
                                     <h6>{cartArr.title}</h6>
                                     <p className='cartitemnum'>{cartArr.num}</p>
                                     </Col>
                                     
-                                    <Col xs={6} sm={3}>
+                                    <Col xs={4} md={4} sm={3}>
                                         
                                     <h6><Button className='Decrement' onClick={this.onDecrement.bind(this,cartArr._id, cartArr.quantity)} variant="default" size="sm"><b>-</b></Button>
                                     &nbsp;
@@ -87,7 +86,7 @@ class Cart extends React.Component{
                                         </h6>
                                     </Col>
 
-                                    <Col xs={6} sm={4}>
+                                    <Col xs={4} md={4} sm={4}>
                                     <h6>$ {cartArr.price}
                                     &nbsp; &nbsp; &nbsp;
                                     <Button  onClick={this.onDelete.bind(this,cartArr._id)} variant="default" size="sm"><b>x</b></Button>
@@ -97,10 +96,7 @@ class Cart extends React.Component{
                                  
                                  </Row>
                                
-                                
-                                
-                                </Col>
-                           
+                             
                             
                               
                                 </Card.Body>
@@ -118,17 +114,17 @@ class Cart extends React.Component{
                       <Row>
                         <Col xs={12} >
                             <Row>
-                        <Col xs={6} sm={4} >
+                        <Col xs={4} sm={4} >
                         <Button  onClick={this.open.bind(this)}  variant="defalt" size="sm">
                         PROCEED TO CHECKOUT
                         </Button>
                         
                         
                         </Col>
-                        <Col xs={6} sm={4} >
+                        <Col xs={4} sm={4} >
                         <h6 className='totalam'>Total amount: {this.props.totalQty}</h6> 
                         </Col>
-                        <Col xs={6}  sm={4}>
+                        <Col xs={5} md={4}  sm={5}>
                         <h6 className='subtotal'>total $: {this.props.totalAmount}</h6>
                         </Col>
                         </Row>

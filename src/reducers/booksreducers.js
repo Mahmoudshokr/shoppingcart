@@ -15,7 +15,7 @@ export function booksreducers(state={
     image:'book4.jpg',
     description: 'this is the second book description',
     num : '#12315',
-    price: 50.22
+    price: 50.11
     }]}, action){
         switch(action.type){
         case "GET_BOOKS":

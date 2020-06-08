@@ -38,7 +38,7 @@ class Bookitem extends React.Component{
      return(
     
         <Row>
-            <Col  xs={12} sm={4}>
+            <Col  xs={6} sm={4}>
             <Image src={ '/images/'+ this.props.image} thumbnail />
              
             </Col>
