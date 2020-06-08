@@ -1,26 +1,26 @@
 "use strict"
 
-export function getBooks(book){
+export var getBooks = (book)=>{
     return {
     type:"GET_BOOKS",
     }
     }
 
-export function postBooks(book){
+export var postBooks =(book)=>{
     return {
     type:"POST_BOOK",
     payload: book
     }
 }
 
-export function deleteBooks(id){
+export var deleteBooks = (id)=>{
     return {
     type:"DELETE_BOOK",
     payload: id
     }
 }
 
-export function updateBooks(book){
+export var updateBooks = (book)=>{
     return {
     type:"UPDATE_BOOK",
     payload: book

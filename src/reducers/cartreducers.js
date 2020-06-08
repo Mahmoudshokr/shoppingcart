@@ -39,11 +39,11 @@ export function cartreducers(state={cart:[]}, action){
 
 
 export function totals(payloadArr){
-        const totalAmount =payloadArr.map(function(cartArr){
+        const totalAmount =payloadArr.map((cartArr)=>{
             return cartArr.price * cartArr.quantity;
         }).reduce(function(a, b) {
             return a + b;}, 0); 
-        const totalQty = payloadArr.map(function(qty){
+        const totalQty = payloadArr.map((qty)=>{
             return qty.quantity;
         }).reduce(function(a, b) {
              return a + b;}, 0);

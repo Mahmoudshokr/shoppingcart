@@ -1,6 +1,6 @@
 "use strict"
 
-export function addToCart(book){
+export var addToCart = (book)=>{
     return {
     type:"ADD_TO_CART",
     payload: book 
@@ -8,14 +8,14 @@ export function addToCart(book){
 }
 
 
-export function deleteCartItem(cart){
+export var deleteCartItem = (cart)=>{
     return {
     type:"DELETE_CART_ITEM",
     payload: cart 
     }
 }
 
-export function updateCart(_id, unit){
+export var updateCart = (_id, unit)=>{
     return {
     type:"UPDATE_CART",
     _id: _id,

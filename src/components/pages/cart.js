@@ -52,7 +52,7 @@ class Cart extends React.Component{
                 return(<div></div>)
             }
             renderCart(){
-                const cartItemsList =this.props.cart.map(function(cartArr){
+                const cartItemsList =this.props.cart.map((cartArr)=>{
                     return(
                         <Card className="cardforitem" key={cartArr._id}>
                             
@@ -163,8 +163,8 @@ class Cart extends React.Component{
         }
         function mapDispatchToProps(dispatch){
                 return bindActionCreators({
-                    deleteCartItem:deleteCartItem,
-                    updateCart:updateCart
+                    deleteCartItem,
+                    updateCart
                 }, dispatch)
             }
 export default connect(mapStateToProps,mapDispatchToProps)(Cart); 

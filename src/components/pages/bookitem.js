@@ -62,8 +62,8 @@ class Bookitem extends React.Component{
         }
         function mapDispatchToProps(dispatch){
             return bindActionCreators({
-                addToCart:addToCart,
-                updateCart:updateCart
+                addToCart,
+                updateCart
             }, dispatch)
         }
 export default connect(mapStateToProps,mapDispatchToProps)(Bookitem);

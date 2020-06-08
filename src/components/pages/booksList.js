@@ -12,7 +12,7 @@ class BooksList extends React.Component{
         this.props.getBooks()
         }
     render(){
-        const booksList = this.props.books.map(function(booksArr){
+        const booksList = this.props.books.map((booksArr)=>{
         return(<Col xs={12} sm={6} md={6} key={booksArr._id}>
             <Bookitem _id= {booksArr._id} title={booksArr.title}
             image={booksArr.image} description={booksArr.description} num={booksArr.num} price={booksArr.price}/>
@@ -38,6 +38,6 @@ class BooksList extends React.Component{
                          }
                     function mapDispatchToProps(dispatch){
                             return bindActionCreators({
-                                getBooks:getBooks}, dispatch)
+                                getBooks}, dispatch)
                         }
 export default connect(mapStateToProps,mapDispatchToProps)(BooksList);
