@@ -6,6 +6,7 @@ export function booksreducers(state={
     title:'this is the book title',
     image:'14.jpg',
     description: 'this is the book description',
+    num : '#12314',
     price: 44.11
     },
     {
@@ -13,6 +14,7 @@ export function booksreducers(state={
     title:'this is the second book title',
     image:'book4.jpg',
     description: 'this is the second book description',
+    num : '#12315',
     price: 50.22
     }]}, action){
         switch(action.type){

@@ -60,6 +60,7 @@ class Cart extends React.Component{
                                 <Col  xs={12} sm={2}>
                 
                                 <Card.Img className='thumbnail' src={'images/' + cartArr.image}/>
+                                
                             
                                 </Col>
                                 
@@ -71,24 +72,25 @@ class Cart extends React.Component{
                              
                               <Col xs={6} sm={5}>
                                     <h6>{cartArr.title}</h6>
+                                    <p className='cartitemnum'>{cartArr.num}</p>
                                     </Col>
                                     
                                     <Col xs={6} sm={3}>
                                         
-                                    <h6><Button className='Decrement' onClick={this.onDecrement.bind(this,cartArr._id, cartArr.quantity)} variant="default" size="sm">-</Button>
+                                    <h6><Button className='Decrement' onClick={this.onDecrement.bind(this,cartArr._id, cartArr.quantity)} variant="default" size="sm"><b>-</b></Button>
                                     &nbsp;
                                    <span className='Qty'>
                                         {cartArr.quantity}
                                     </span>
                                     &nbsp;
-                                    <Button className='Increment' onClick={this.onIncrement.bind(this,cartArr._id)} variant="default"  size="sm">+</Button>
+                                    <Button className='Increment' onClick={this.onIncrement.bind(this,cartArr._id)} variant="default"  size="sm"><b>+</b></Button>
                                         </h6>
                                     </Col>
 
                                     <Col xs={6} sm={4}>
                                     <h6>$ {cartArr.price}
                                     &nbsp; &nbsp; &nbsp;
-                                    <Button  onClick={this.onDelete.bind(this,cartArr._id)} variant="default" size="sm">X</Button>
+                                    <Button  onClick={this.onDelete.bind(this,cartArr._id)} variant="default" size="sm"><b>x</b></Button>
                                    
                                     </h6>
                                    </Col>

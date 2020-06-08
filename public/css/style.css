@@ -16,6 +16,9 @@
 .cardforitem{
     border: none;
 }
+.cartitemnum{
+    opacity: 0.7;
+}
 .card-title{
     padding: 25px 0px 0px 30px; 
 }

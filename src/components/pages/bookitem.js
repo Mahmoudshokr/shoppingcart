@@ -12,6 +12,7 @@ class Bookitem extends React.Component{
                             title:this.props.title,
                             image:this.props.image,
                             description:this.props.description,
+                            num : this.props.num,
                             price:this.props.price,
                             quantity:1
                          }]
