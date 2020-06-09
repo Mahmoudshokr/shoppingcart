@@ -71,7 +71,7 @@ class Cart extends React.Component{
                              
                               <Col xs={4} md={4} sm={5}>
                                     <h6>{cartArr.title}</h6>
-                                    <p className='cartitemnum'>{cartArr.num}</p>
+                                    <p className='opacity'>{cartArr.num}</p>
                                     </Col>
                                     
                                     <Col xs={4} md={4} sm={3}>
@@ -122,10 +122,10 @@ class Cart extends React.Component{
                         
                         </Col>
                         <Col xs={4} sm={4} >
-                        <h6 className='totalam'>Total amount: {this.props.totalQty}</h6> 
+                        <h6 className='totalam'><span className='opacity'>Total amount:</span><b className='fontbigger'>{this.props.totalQty}</b></h6> 
                         </Col>
-                        <Col xs={5} md={4}  sm={5}>
-                        <h6 className='subtotal'>total $: {this.props.totalAmount}</h6>
+                        <Col xs={7} md={4}  sm={5}>
+                        <h6 className='subtotal'><span className='opacity'>subtotal:</span><b className='fontbigger'>${this.props.totalAmount}</b></h6>
                         </Col>
                         </Row>
                         <Modal show={this.state.showModal} onHide={this.close.bind(this)}>
