@@ -87,7 +87,7 @@ class Cart extends React.Component{
                                     </Col>
 
                                     <Col xs={4} md={4} sm={4}>
-                                    <h6>$ {cartArr.price}
+                                    <h6 className='removeitemcart'>$ {cartArr.price}
                                     &nbsp; &nbsp; &nbsp;
                                     <Button  onClick={this.onDelete.bind(this,cartArr._id)} variant="default" size="sm"><b>x</b></Button>
                                    
